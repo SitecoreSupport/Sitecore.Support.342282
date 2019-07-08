@@ -7408,7 +7408,7 @@
                      var quality = options.youtube.imageQuality,
                          resolutions = ['default', 'hqdefault', 'mqdefault', 'sddefault', 'maxresdefault'],
                          id = YouTubeApi.getYouTubeId(mediaElement.originalNode.src);
-                     return quality && resolutions.indexOf(quality) > -1 && id ? 'https://img.youtube.com/vi/' + id + '/' + quality + '.jpg' : '';
+                     return quality && resolutions.indexOf(quality) > -1 && id ? 'https://img.youtube.com/vi/' + id + '/' + quality + '.jpg' : 'https://img.youtube.com/vi/' + id + '/maxresdefault.jpg';
                  };
 
                  return youtube;
